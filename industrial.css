@@ -1,0 +1,71 @@
+.main-2 {
+	font-family: Inter, sans-serif;
+	align-self: center;
+	margin-top: 40px;
+}
+
+.blueline {
+	margin-top: 0px;
+	background-color: #021a20;
+	align-items: center;
+	color: #fff;
+	text-align: center;
+	justify-content: center;
+	padding: 9px 60px 9px 94px;
+	font: 700 20px Inter, sans-serif;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 5px;
+}
+.under-gallery {
+	width: 148px; /* уменьшаем ширину линии */
+	margin: 0 auto; /* выравниваем по центру */
+	margin-top: 10px; /* добавляем отступ сверху */
+	border-color: #ffb625; /* задаем цвет линии */
+	margin-bottom: 5px;
+}
+p {
+	text-align: center;
+}
+
+/* Увеличиваем размер изображений */
+.image-grid2 img {
+	width: 200px;
+	height: 200px;
+}
+
+/* Стилизация figure */
+.image-grid2 figure {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+/* Стилизация figcaption внутри figure */
+.image-grid2 figcaption {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #666;
+}
+
+.disign {
+	margin-top: 30px;
+	align-items: center;
+	text-align: center;
+}
+
+/* Стилизация figure */
+.image-grid figure {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+/* Стилизация figcaption внутри figure */
+.image-grid figcaption {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #666;
+}

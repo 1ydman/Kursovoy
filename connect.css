@@ -1,0 +1,68 @@
+.form-container {
+	max-width: 500px;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+label {
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+input,
+textarea,
+.submit {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+input[type='file'] {
+	padding: 3px;
+}
+
+.submit {
+	display: block;
+	/* position: absolute; */
+	margin-top: 20px;
+	width: 120px;
+	background-color: #050d25;
+	color: white;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	position: relative;
+}
+
+.submit:hover {
+	background-color: #ffb625;
+}
+
+input:invalid {
+	border-color: red;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 5px;
+}
+.under-gallery {
+	width: 148px; /* уменьшаем ширину линии */
+	margin: 0 auto; /* выравниваем по центру */
+	margin-top: 10px; /* добавляем отступ сверху */
+	border-color: #ffb625; /* задаем цвет линии */
+	margin-bottom: 5px;
+}

@@ -1,0 +1,106 @@
+.blueline {
+	margin-top: 0px;
+	background-color: #021a20;
+	align-items: center;
+	color: #fff;
+	text-align: center;
+	justify-content: center;
+	padding: 9px 60px 9px 94px;
+	font: 700 20px Inter, sans-serif;
+}
+.gallery-page button {
+	position: relative;
+}
+
+.gallery-page-row {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.column {
+	margin-bottom: 10px;
+}
+
+img {
+	border-radius: 8px;
+	width: 100%;
+}
+#loadMoreButtonSectional {
+	display: block;
+	margin: 0 auto; 
+	padding: 10px 20px; 
+	background-color: #050d25; 
+	color: white; 
+	border: none;
+	border-radius: 5px; 
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s; 
+}
+
+#loadMoreButtonSectional:hover {
+	background-color: #ffb625; 
+}
+#loadMoreButtonSwing {
+	display: block;
+	margin: 0 auto; 
+	padding: 10px 20px; 
+	background-color: #050d25;
+	color: white; 
+	border: none;
+	border-radius: 5px; 
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s; 
+}
+
+#loadMoreButtonSwing:hover {
+	background-color: #ffb625; 
+}
+#loadMoreButtonDoors {
+	display: block;
+	margin: 0 auto; 
+	padding: 10px 20px; 
+	background-color: #050d25; 
+	color: white; 
+	border: none;
+	border-radius: 5px; 
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s; 
+}
+
+#loadMoreButtonDoors:hover {
+	background-color: #ffb625; 
+}
+#loadMoreButtonIndustrial {
+	display: block;
+	margin: 0 auto; 
+	padding: 10px 20px; 
+	background-color: #050d25; 
+	color: white; 
+	border: none;
+	border-radius: 5px; 
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s; 
+}
+
+#loadMoreButtonIndustrial:hover {
+	background-color: #ffb625; 
+}
+
+.nad_gallery {
+	text-align: center;
+	font-size: larger;
+	font-weight: 700;
+	font-family: sans-serif;
+}
+
+@media (max-width: 768px) {
+	.gallery-page-row {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

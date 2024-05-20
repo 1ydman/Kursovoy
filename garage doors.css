@@ -1,0 +1,342 @@
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	display: inline-block;
+	position: relative;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	padding: 10px 20px;
+	display: block;
+	transition: background-color 0.3s ease;
+	text-align: center;
+}
+
+nav ul li a:hover {
+	background-color: #021a20;
+	color: white;
+}
+
+nav ul li ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #f9f9f9;
+	width: 100%;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+nav ul li ul li {
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+}
+
+nav ul li ul li:last-child {
+	border-bottom: none;
+}
+
+nav ul li ul li a {
+	padding: 10px 20px;
+	display: block;
+	text-align: center;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+nav ul li ul li a:hover {
+	background-color: #021a20;
+	color: white;
+}
+
+
+.main {
+	margin: 40px auto;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	max-width: 837px;
+	flex-direction: column;
+	font-size: 16px;
+	color: #000;
+	font-weight: 200;
+	text-align: center;
+	/* padding: 0 20px; */
+}
+
+.main-img {
+	border-radius: 8px;
+	aspect-ratio: 1.89;
+	object-fit: auto;
+	object-position: center;
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.main-2 {
+	font-family: Inter, sans-serif;
+	align-self: center;
+	margin-top: 53px;
+}
+
+.blueline {
+	margin-top: 0px;
+	background-color: #021a20;
+	align-items: center;
+	color: #fff;
+	text-align: center;
+	justify-content: center;
+	padding: 9px 60px 9px 94px;
+	font: 700 20px Inter, sans-serif;
+}
+
+
+
+.flex-item {
+	/* padding: 20px; */
+	align-items: center;
+	background-color: #ffffff;
+	text-align: center; /* Выравнивание содержимого по центру */
+}
+
+.blueline {
+	font-size: 24px;
+	text-align: center;
+}
+
+.flex-item img {
+	max-width: 100%; /* Максимальная ширина изображения */
+	height: auto; /* Автоматическое изменение высоты для сохранения пропорций */
+}
+
+/* Стили для определенных элементов */
+.flex-item:nth-child(1),
+.flex-item:nth-child(5),
+.flex-item:nth-child(6),
+.flex-item:nth-child(12),
+.flex-item:nth-child(13) {
+	flex-basis: 30%; /* Элементы, которые должны занимать всю ширину */
+}
+
+
+/* Стили для элементов */
+.flex-item {
+	position: relative; /* Для позиционирования псевдоэлемента */
+}
+
+.flex-item::after {
+	content: ''; /* Обязательное свойство для псевдоэлемента */
+	position: absolute; /* Позиционируем псевдоэлемент относительно flex-item */
+	bottom: 0; /* Помещаем его внизу */
+	left: 0; /* Начало линии с левого края */
+	width: 100%; /* Растягиваем на всю ширину flex-item */
+	height: 1px; /* Толщина линии */
+	background-color: black; /* Цвет линии */
+}
+
+
+
+
+
+.blueline {
+	font-size: 24px;
+	text-align: center;
+}
+
+.flex-item img {
+	border-radius: 8px;
+	max-width: 100%; /* Максимальная ширина изображения */
+	height: auto; /* Автоматическое изменение высоты для сохранения пропорций */
+}
+
+/* Стили для определенных элементов */
+.flex-item:nth-child(1),
+.flex-item:nth-child(5),
+.flex-item:nth-child(6),
+.flex-item:nth-child(12),
+.flex-item:nth-child(13) {
+	flex-basis: 30%; /* Элементы, которые должны занимать всю ширину */
+}
+
+/* Добавляем линию после каждой строки кроме последней */
+/* Стили для линии между строками */
+.flex-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* 3 столбца */
+	grid-auto-rows: auto; /* Высота строкы автоматически */
+	gap: 10px; /* Расстояние между элементами */
+	border-collapse: collapse; /* Объединяем границы ячеек */
+}
+
+/* Стили для элементов */
+.flex-item {
+	position: relative; /* Для позиционирования псевдоэлемента */
+}
+
+.flex-item::after {
+	content: ''; /* Обязательное свойство для псевдоэлемента */
+	position: absolute; /* Позиционируем псевдоэлемент относительно flex-item */
+	bottom: 0; /* Помещаем его внизу */
+	left: 0; /* Начало линии с левого края */
+	width: 100%; /* Растягиваем на всю ширину flex-item */
+	height: 1px; /* Толщина линии */
+	background-color: black; /* Цвет линии */
+}
+
+.image-grid {
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* Определяем 3 колонки */
+	gap: 10px; /* Пространство между изображениями */
+	justify-content: center; /* Центрируем содержимое по горизонтали */
+}
+
+/* Увеличиваем размер изображений */
+.image-grid img {
+	border-radius: 8px;
+	width: 200px; /* Устанавливаем ширину изображения на 100% */
+	height: 200px; /* Сохраняем пропорции */
+}
+
+/* Стилизация figure */
+.image-grid figure {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+/* Стилизация figcaption внутри figure */
+.image-grid figcaption {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #666;
+}
+
+.disign {
+	margin-top: 30px;
+	align-items: center;
+	text-align: center;
+}
+h2 {
+	text-align: center;
+	margin-bottom: 5px;
+}
+.under-gallery {
+	width: 148px; /* уменьшаем ширину линии */
+	margin: 0 auto; /* выравниваем по центру */
+	margin-top: 10px; /* добавляем отступ сверху */
+	border-color: #ffb625; /* задаем цвет линии */
+	margin-bottom: 5px;
+}
+
+.gallery {
+	position: relative;
+	max-width: 1300px; /* Максимальная ширина галереи */
+	margin: 0 auto;
+	overflow: hidden; /* Скрыть часть слайдов, которые выходят за пределы галереи */
+}
+.GALEREYA {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	background-color: rgb(250, 250, 250);
+}
+.gallery-2 {
+	margin-top: 10px;
+}
+
+.slides-container {
+	display: flex;
+	transition: transform 0.5s ease; /* Добавляем анимацию для плавного перехода */
+}
+
+.slide {
+	flex: 0 0 calc(25% - 10px); /* Ширина слайда с учетом промежутка */
+	margin-right: 15px; /* Отступ между слайдами */
+	transition: transform 0.5s ease;
+}
+.slide:last-child {
+	margin-right: 0; /* Убираем отступ у последнего слайда */
+}
+.slides-container img {
+	border-radius: 8px;
+	width: 280px;
+	height: 180px;
+}
+
+button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(255, 255, 255, 0.5);
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.prev {
+	left: 0;
+}
+
+.next {
+	right: 0;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	justify-content: center; /* Центрирование элементов внутри списка */
+}
+
+nav ul li {
+	margin-right: 40px;
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+@media (max-width: 768px) {
+	.flex-container{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.flex-item{
+		margin: 0 auto;
+	}
+	.image-grid img {
+		border-radius: 8px;
+		width: 100%; /* Устанавливаем ширину изображения на 100% */
+		height: auto; /* Сохраняем пропорции */
+	}
+	.image-grid{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 700px) {
+	.flex-container{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.image-grid{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+}
